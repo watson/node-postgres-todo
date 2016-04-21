@@ -16,8 +16,8 @@ app.use(express.static(path.join(__dirname, './client', 'public')));
 
 app.use('/', routes);
 
-var port = process.env.PORT || 3000
+var port = process.env.PORT || 3000;
 
 app.listen(port, function () {
-  console.log('Express is running on port', port)
-})
+  console.log('Express is running on port', port);
+});
