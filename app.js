@@ -1,3 +1,6 @@
+// add this to the VERY top of the first file loaded in your app
+var opbeat = require('opbeat').start()
+
 var express = require('express');
 var path = require('path');
 var logger = require('morgan');
