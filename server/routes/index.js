@@ -6,6 +6,7 @@ var connectionString = require(path.join(__dirname, '../', '../', 'config'));
 
 
 router.get('/', function(req, res, next) {
+  console.log(req.headers)
   res.sendFile(path.join(__dirname, '../', '../', 'client', 'views', 'index.html'));
 });
 
